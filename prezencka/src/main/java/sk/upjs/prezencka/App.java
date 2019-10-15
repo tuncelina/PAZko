@@ -11,11 +11,11 @@ public class App extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		SubjectEditController controller = new SubjectEditController();
-		//grfegerger
+		// grfegerger
 		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SubjectEdit.fxml"));
 		fxmlLoader.setController(controller);
-		Parent parent =fxmlLoader.load();
-		
+		Parent parent = fxmlLoader.load();
+
 		Scene scene = new Scene(parent);
 		primaryStage.setScene(scene);
 		primaryStage.show();
